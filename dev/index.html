@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:image" content="http://findclickprice.ru/ali/img/share-img.jpg">
+		<meta name="viewport" content="width=1200, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>FindClickPrice — сервис поиска по картинкам на алиэкспресс</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<link href="ali/fonts/fonts.css" rel="stylesheet">
+		<link href="ali/css.css" rel="stylesheet">
+		<link href="ali/app/jquery.bxslider.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="shortcut icon" href="/favicon.png" type="image/png">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-85748046-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter40382200 = new Ya.Metrika({
+							id:40382200,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true,
+							trackHash:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/40382200" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+    </head>
+    <body>
+
+		<div class="container">
+			<div class="row header-block">
+				<form action="" enctype="multipart/form-data" method="post" name="search" class="searchWidget">
+					<div class="form-group mb10">
+						<label for="inputPassword2" class="sr-only"></label>
+						<input type="text" name="url" class="form-control input__elem_search" data-bind="textInput: url, event: { blur: urlSearchValid }, css: { invalidUrl: !isValidUrl()}" value=""  data-loading-text="Loading..." placeholder="Добавьте ссылку на изображение, пример: https://pp.vk.me/c837332/v837332425/2672/hoZPndcOOEw.jpg">
+						<div class="text-center" style="display: inline-block; float: right">
+							<button type="submit" class="btn btn-default fs15" id="search" data-bind="click: function(){send();}">Найти</button>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="text-left inline-block relative" style="width: 926px;">
+						<label class="fileSearch">
+							<input type="file" name="searchimg" data-bind="event: { change: function() { fileUploadHandler($element.files[0]) } }" required/>
+							<span class="uploadImage">Загрузить изображение<img src="/ali/img/pictogramm.png"/></span>
+						</label>
+						<div class="fs12 filehelptext" id="fileName"><div>Добавьте файл (jpg, jpeg, png)</div></div>
+					</div>
+					<div class="helper-block text-center inline-block relative">
+						<span>Подсказки</span>
+						<div class="ali-circle"></div>
+						
+						<ul class="sub-help">
+							<li data-toggle="modal" data-target="#modal-video_URL"><span>Добавление<br /> URL ссылки</span></li>
+							<li class="last" data-toggle="modal" data-target="#modal-video_file"><span>Загрузка<br /> изображения</span></li>
+						<ul>
+						
+					</div>
+				</form>
+				
+			</div>
+			<div class="row h955">
+				<div class="itemsBlock relative">
+					<div class="bg-action">
+						<div class="inline-block b-bxsliderbg">
+							<ul class="bxslider-up carousel1">
+							  <li><img src="/ali/img/bg/1.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/2.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/3.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/4.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/5.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/6.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/7.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/8.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/9.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/10.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/11.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/12.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/13.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/14.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/15.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/16.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/17.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/18.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/19.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/20.jpg" width="220" /></li>
+							</ul>
+						</div>
+						<div class="inline-block b-bxsliderbg">
+							<ul class="bxslider-down carousel2">
+							  <li><img src="/ali/img/bg/21.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/22.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/23.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/24.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/25.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/26.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/27.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/28.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/29.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/30.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/31.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/32.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/33.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/34.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/35.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/36.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/37.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/38.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/39.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/40.jpg" width="220" /></li>
+							</ul>
+						</div>
+						<div class="inline-block b-bxsliderbg">
+							<ul class="bxslider-up carousel3">
+							  <li><img src="/ali/img/bg/41.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/42.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/43.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/44.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/45.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/46.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/47.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/48.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/49.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/50.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/51.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/52.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/53.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/54.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/55.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/56.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/57.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/58.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/59.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/60.jpg" width="220" /></li>
+							</ul>
+						</div>
+						<div class="inline-block b-bxsliderbg">
+							<ul class="bxslider-down carousel4">
+							  <li><img src="/ali/img/bg/61.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/62.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/63.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/64.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/65.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/66.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/67.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/68.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/69.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/70.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/71.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/72.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/73.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/74.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/75.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/76.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/77.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/78.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/79.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/80.jpg" width="220" /></li>
+							</ul>
+						</div>
+						<div class="inline-block b-bxsliderbg last">
+							<ul class="bxslider-up carousel5">
+							  <li><img src="/ali/img/bg/81.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/82.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/83.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/84.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/85.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/86.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/87.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/88.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/89.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/90.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/91.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/92.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/93.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/94.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/95.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/96.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/97.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/98.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/99.jpg" width="220" /></li>
+							  <li><img src="/ali/img/bg/100.jpg" width="220" /></li>
+							</ul>
+						</div>
+						
+					</div>
+					
+					
+					<div class="loading-container" style="display: none;">
+						<div class="loading"></div>
+						<div id="loading-text">Поиск</div>
+					</div>
+					<div class="error-container" data-bind="visible: noResults">
+						<div>Ох, ничего не нашли :(</div>
+						<img src="/ali/img/405.gif"/>
+						<div>
+							Напишите нам на почту<br /> и мы постараемся вам помочь<br /><a href="mailto:aliclickprice@gmail.com">aliclickprice@gmail.com</a>
+						</div>
+					</div>
+					<div class="error-container" data-bind="visible: isError">
+						Допускаются только файлы расширением png или jpg.
+					</div>
+					<div class="blog-main" data-bind="foreach: result, visible: result().length && !Loading() && !noResults()">
+						<!-- ko template: {name: 'resultItems', data: $data} -->
+						<!-- /ko-->
+					</div>
+				</div>
+			</div>
+
+			<div class="b-footer">
+				<p>
+					<a href="http://findclickprice.ru/">findclickprice.ru</a>
+				</p>
+			</div>
+		</div><!-- /.container -->
+
+<script type="text/html" id="resultItems">
+	<div class="blog-post blog-post-designed">
+		<div>
+			<a data-bind="attr: {'href': url}" target="_blank" class="imgItem text-center block">
+				<img data-bind="attr: {'src': image}"/>
+			</a>
+			<a class="text-center block titleImg" data-bind="text: title, attr: {'href': url}" target="_blank"></a>
+			<div class="text-center">
+				<a type="submit" data-bind="attr: {'href': url}" target="_blank" class="block view-btn btn btn-default fs15">Посмотреть</a>
+			</div>
+		</div>
+	</div>
+</script>
+		
+<div class="modal modal-fullscreen fade" id="modal-video_file" style="margin: 0 auto;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- download_file.mp4 -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<video style="width: 900px;" id="videofile" controls="controls" loop="loop" autoplay>
+				     <source src="http://findclickprice.ru/ali/video/download_file.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+					 <source src="http://findclickprice.ru/ali/video/download_file.ogv" type='video/ogg; codecs="theora, vorbis"'>
+					 <source src="http://findclickprice.ru/ali/video/download_file.webm" type='video/webm; codecs="vp8, vorbis"'>
+				</video>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-fullscreen fade" id="modal-video_URL" style="margin: 0 auto;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- download_file.mp4 -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<video style="width: 900px;" id="videourl" controls="controls" autoplay loop="loop">
+				     <source src="http://findclickprice.ru/ali/video/copy_url.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					 <source src="http://findclickprice.ru/ali/video/copy_url.ogv" type='video/ogg; codecs="theora, vorbis"'>
+					 <source src="http://findclickprice.ru/ali/video/copy_url.webm" type='video/webm; codecs="vp8, vorbis"'>
+				</video>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ali-close"></div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script src="ali/app/modernizr-2.6.2.min.js"></script>
+	<script src="ali/app/jquery.bxslider.min.js"></script>
+	<script src="ali/app/jquery.easing.1.3.js"></script>
+	
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	
+	
+	<script src="ali/knockout.js"></script>
+	
+	<script src="ali/app/script.js"></script>
+	<script src="ali/app/app.js"></script>
+	
+	<script type="text/javascript">
+		var items = '<?=$result['items']?>';
+		var status = '<?=$result['status']?>';
+		var state = [];
+		if(items != '' && items != 'Array'){
+			state = JSON.parse(items);
+		}
+		ko.applyBindings(ViewModel(state, status));
+	</script>
+	
+  </body>
+</html>
